@@ -53,18 +53,21 @@ difference(){
         cylinder( h = 32.1, d = 9);
     };
         
-    translate([ 3.80, 2, 5])
-    cube([ cameraHoleWidth, 1.9, 34]);
-    
-    translate([ 3.80, 1.01, 5.0])
-    prism( cameraHoleWidth, 1, 4);
-    
-    rotate([ 0, 0, 180])
-    translate([ -36.2, -4.89, 5])
-    prism( cameraHoleWidth, 1, 4);
+    translate([ 0, 0, 0])
+    {
+        translate([ 3.80, 2, 5])
+        cube([ cameraHoleWidth, 1.9, 34]);
         
-    translate([ 10, 2, 5])
-    cube([ cotoutWidth, cotoutWidth, 21]);
+        translate([ 3.80, 1.01, 5.0])
+        prism( cameraHoleWidth, 1, 4);
+        
+        rotate([ 0, 0, 180])
+        translate([ -36.2, -4.89, 5])
+        prism( cameraHoleWidth, 1, 4);
+            
+        translate([ 10, 2, 5])
+        cube([ cotoutWidth, cotoutWidth, 21]);
+    }
         
     translate([ 0.5 * totalWidth - 9.95, 51, 3])
     cube([ 20.1, 15.1, 3]);
